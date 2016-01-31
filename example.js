@@ -5,7 +5,7 @@ require(["asciifier", "canvasview"], function(asciifier, CanvasView) {
 	style.id = "mainStyle";
 	style.innerHTML = [
 		"@font-face {",
-		    "font-family: Courier New;",
+		    "font-family: 'Ascii Default';",
 		    "src: url('couriernew.tff') format('truetype');",
 		"}",
 		"html, body {",
