@@ -40,12 +40,6 @@ define(function (require) {
 		
 		/** Perform action for window resize event. */
 		this.onResize = function () {
-
-			asciifier.textdiv.innerHTML = "..........\n..........\n..........\n..........\n..........\n..........\n..........\n..........\n..........\n..........";
-
-			asciifier.textWidth = this.textdiv.offsetWidth / 10;
-			asciifier.textHeight = this.textdiv.offsetHeight / 10;
-
 			asciifier.update();
 		};
 		

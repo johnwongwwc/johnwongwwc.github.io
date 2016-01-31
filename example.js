@@ -13,6 +13,7 @@ require(["asciifier", "canvasview"], function(asciifier, CanvasView) {
 			"height: 100%;",
 		"}",
 		"body {",
+			"font-family: 'Ascii Default';",
 			"margin: 0px;",
 		"}",
 		"#main {",
