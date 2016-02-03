@@ -23,7 +23,7 @@ define(function (require) {
 
 		/* Create the textarea. */
 		this.textdiv = document.createElement("pre");
-		this.textdiv.style.font = config.font || "bold 10px/7px 'Ascii Default'";
+		this.textdiv.style.font = config.font || "bold 10px/7px Courier New, Courier, Fixed, monospace";
 		this.textdiv.style.position = "absolute";
 		this.textdiv.style.height = "auto";
 		this.textdiv.style.width = "auto";
