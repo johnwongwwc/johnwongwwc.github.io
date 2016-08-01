@@ -33,7 +33,7 @@ require(["asciifier", "canvasview"], function(asciifier, CanvasView) {
 		
 		var asciify = new asciifier(canvasView.canvas, { background: "black", color: "green", invert: true }, canvasView.animator);
 		canvasView.addRenderFunction(function () {
-		    	canvasView.getCanvas2DContext().drawImage(imageObj, 0, 0, canvasView.canvas.width, canvasView.canvas.height);
+		    	canvasView.getCanvas2DContext().drawImage(image, 0, 0, canvasView.canvas.width, canvasView.canvas.height);
 		});
 		canvasView.start();
 		
