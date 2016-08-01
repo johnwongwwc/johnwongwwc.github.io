@@ -24,7 +24,7 @@ require(["asciifier", "canvasview"], function(asciifier, CanvasView) {
 
 	var body = document.getElementsByTagName("body")[0];
 	
-	var image = document.createElement('image');
+	var image = document.createElement('img');
 	image.src = 'giphy.gif';
 
 	image.onload = function() {
