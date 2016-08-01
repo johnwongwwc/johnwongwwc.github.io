@@ -38,7 +38,7 @@ require(["asciifier", "canvasview"], function(asciifier, CanvasView) {
 		var asciify = new asciifier(canvas, { background: "black", color: "green", invert: true });
 	};
 
-	imageObj.src = 'darth-vader.jpg';
+	imageObj.src = 'http://media.giphy.com/media/l0HludWL9fgWZSJwI/giphy.gif';
 	//imageObj.src = 'test.png';
 
 	body.appendChild(canvas);
