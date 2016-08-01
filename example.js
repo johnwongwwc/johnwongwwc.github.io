@@ -24,7 +24,7 @@ require(["asciifier", "canvasview"], function(asciifier, CanvasView) {
 
 	var body = document.getElementsByTagName("body")[0];
 	
-	/*
+	
 	var canvas = document.createElement("canvas");
 	canvas.id = "main";
 	canvas.style.position = "absolute";
@@ -42,7 +42,7 @@ require(["asciifier", "canvasview"], function(asciifier, CanvasView) {
 	//imageObj.src = 'test.png';
 
 	body.appendChild(canvas);
-	*/
+	
 	
 	/*
 	var video = document.createElement("video");
@@ -70,7 +70,7 @@ require(["asciifier", "canvasview"], function(asciifier, CanvasView) {
 	video.play();
 	canvasView.start();
 	*/
-
+/*
 	var video = document.createElement("video");
 	video.style.display = "none";
 	video.innerHTML = "Your browser does not support HTML5 video.";
@@ -102,4 +102,5 @@ require(["asciifier", "canvasview"], function(asciifier, CanvasView) {
 			canvasView.start();
 		}, function () { console.log('you don\'t have camera permission allowed.'); });
 	}
+	*/
 });
