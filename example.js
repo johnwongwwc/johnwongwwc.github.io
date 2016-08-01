@@ -52,7 +52,6 @@ require(["asciifier", "canvasview"], function(asciifier, CanvasView) {
 	video.src = "demo.ogv";
 
 	body.appendChild(video);
-	video.appendChild(source);
 	
 	var canvasView = new CanvasView(body);
 	var animator = canvasView.animator;
