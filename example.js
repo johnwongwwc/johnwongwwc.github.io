@@ -34,8 +34,13 @@ require(["asciifier", "canvasview"], function(asciifier, CanvasView) {
 	var imageObj = new Image();
 
 	imageObj.onload = function() {
-		context.drawImage(imageObj, 0, 0, 300, 150);
-		var asciify = new asciifier(canvas, { background: "black", color: "green", invert: true });
+		var canvasView = new CanvasView(body);
+		var animator = canvasView.animator;
+		
+		var asciify = new asciifier(canvasView.canvas, { background: "black", color: "green", invert: true }, canvasView.animator);
+		canvasView.addRenderFunction(function () {
+		    	canvasView.getCanvas2DContext().drawImage(imageObj, 0, 0, canvasView.canvas.width, canvasView.canvas.height);
+		});
 	};
 
 	imageObj.src = 'http://media.giphy.com/media/l0HludWL9fgWZSJwI/giphy.gif';
