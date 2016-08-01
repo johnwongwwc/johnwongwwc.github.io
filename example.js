@@ -44,7 +44,7 @@ require(["asciifier", "canvasview"], function(asciifier, CanvasView) {
 		canvasView.start();
 	};
 
-	imageObj.src = 'http://media.giphy.com/media/l0HludWL9fgWZSJwI/giphy.gif';
+	imageObj.src = 'giphy.gif';
 	//imageObj.src = 'test.png';
 
 	body.appendChild(canvas);
