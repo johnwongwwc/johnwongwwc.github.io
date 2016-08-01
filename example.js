@@ -49,10 +49,7 @@ require(["asciifier", "canvasview"], function(asciifier, CanvasView) {
 	var video = document.createElement("video");
 	video.style.display = "none";
 	video.innerHTML = "Your browser does not support HTML5 video.";
-
-	var source = document.createElement("source");
-	source.src = "demo.ogv";
-	source.type = "video/ogv";
+	video.src = "demo.ogv";
 
 	body.appendChild(video);
 	video.appendChild(source);
