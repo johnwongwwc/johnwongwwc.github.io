@@ -24,16 +24,10 @@ require(["asciifier", "canvasview"], function(asciifier, CanvasView) {
 
 	var body = document.getElementsByTagName("body")[0];
 	
-	
-	var canvas = document.createElement("canvas");
-	canvas.id = "main";
-	canvas.style.position = "absolute";
-	canvas.innerHTML = "Your browser does not support HTML5 canvas.";
+	var image = document.createElement('image');
+	image.src = 'giphy.gif';
 
-	var context = canvas.getContext("2d");
-	var imageObj = new Image();
-
-	imageObj.onload = function() {
+	image.onload = function() {
 		var canvasView = new CanvasView(body);
 		var animator = canvasView.animator;
 		
@@ -42,13 +36,11 @@ require(["asciifier", "canvasview"], function(asciifier, CanvasView) {
 		    	canvasView.getCanvas2DContext().drawImage(imageObj, 0, 0, canvasView.canvas.width, canvasView.canvas.height);
 		});
 		canvasView.start();
+		
+		window.canvasView = canvasView;
 	};
-
-	imageObj.src = 'giphy.gif';
-	//imageObj.src = 'test.png';
-
-	body.appendChild(canvas);
 	
+	body.appendChild(image);
 	
 	/*
 	var video = document.createElement("video");
