@@ -41,6 +41,7 @@ require(["asciifier", "canvasview"], function(asciifier, CanvasView) {
 		canvasView.addRenderFunction(function () {
 		    	canvasView.getCanvas2DContext().drawImage(imageObj, 0, 0, canvasView.canvas.width, canvasView.canvas.height);
 		});
+		canvasView.start();
 	};
 
 	imageObj.src = 'http://media.giphy.com/media/l0HludWL9fgWZSJwI/giphy.gif';
